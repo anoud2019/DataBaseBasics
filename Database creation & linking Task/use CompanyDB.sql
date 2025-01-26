@@ -84,7 +84,7 @@ WHERE department_id IN (
     WHERE budget > 200000
 );
 
---List the names of employees who work in departments located in 'San Francisco'.
+--List the names of employees who work in departments located in 'Dubai'.
 SELECT name
 FROM employees
 WHERE department_id IN (
