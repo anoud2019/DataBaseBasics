@@ -1,11 +1,9 @@
 use CompanyDB;
 --Find Employees Working in Departments Handling Projects With Budgets Greater Than 5000.
-select employees.name,departments.department_name,projects.budget
+select employees.name,projects.project_name,projects.budget
 from employees
-inner join departments 
-on employees.department_id=departments.department_id
 inner join projects
-on departments.department_id=projects.department_id
+on employees.department_id=projects.department_id
 where projects.budget>150000;
 
 --Find Employees and Their Projects With Department Details.
